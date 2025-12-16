@@ -1,0 +1,60 @@
+.fixed-height-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable-history {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.history-column {
+    border: 2px solid #3b82f6 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    background: #1e293b !important;
+}
+
+.scrollable-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-history::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 4px;
+}
+
+.scrollable-history::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.scrollable-history::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.scrollable-history {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #2a2a2a;
+}
+
+.fixed-height-container h3 {
+    text-align: center !important;
+    margin-bottom: 16px !important;
+}
+
+.fixed-height-container .gr-markdown h3 {
+    text-align: center !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+}
+
+.fixed-height-container .gr-markdown {
+    text-align: center !important;
+    width: 100% !important;
+}

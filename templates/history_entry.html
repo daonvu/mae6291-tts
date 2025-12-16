@@ -1,0 +1,30 @@
+<details{open_attr} style='margin-bottom:16px;'>
+  <summary style='font-size:1rem; font-weight:600; cursor:pointer;'>
+    Generation {generation_number}
+  </summary>
+  <div style='display:flex; gap:18px; margin-top:12px; flex-wrap:wrap;'>
+    <div style='flex:1; min-width:260px; background:#2b2b2b; padding:14px; border-radius:8px;'>
+      <h4 style='margin-top:0; margin-bottom:8px;'>Generation Settings</h4>
+      <div style='display:grid; grid-template-columns: 140px 1fr; row-gap:6px; column-gap:12px;'>
+        <div style='font-weight:600;'>Reference Audio:</div><div>{audio_name}</div>
+        <div style='font-weight:600;'>Text Prompt:</div><div>'{text_prompt}'</div>
+        <div style='font-weight:600;'>Style:</div><div>{style}</div>
+        <div style='font-weight:600;'>Exaggeration:</div><div>{exaggeration}</div>
+        <div style='font-weight:600;'>Pace:</div><div>{pace}</div>
+        <div style='font-weight:600;'>Temperature:</div><div>{temperature}</div>
+        <div style='font-weight:600;'>Seed:</div><div>{seed}</div>
+      </div>
+    </div>
+    <div style='flex:1; min-width:260px; background:#2b2b2b; padding:14px; border-radius:8px;'>
+      <h4 style='margin-top:0; margin-bottom:8px;'>Model & Audio</h4>
+      <div style='display:grid; grid-template-columns: 140px 1fr; row-gap:6px; column-gap:12px;'>
+        <div style='font-weight:600;'>Model:</div><div>{model_name}</div>
+        <div style='font-weight:600;'>Device:</div><div>{device}</div>
+        <div style='font-weight:600;'>GPU:</div><div>{gpu}</div>
+        <div style='font-weight:600;'>VRAM Used:</div><div>{vram_used_formatted} MB</div>
+        <div style='font-weight:600;'>Latency:</div><div>{latency_formatted} s</div>
+      </div>
+      {audio_player}
+    </div>
+  </div>
+</details>
