@@ -1,14 +1,13 @@
-# mae6291-tts: ATC Text-to-Speech Demo
+# mae6291-tts: Text-to-Speech Demo
 
 This project is a final project for GWU MAE 6291 and demonstrates a customizable
-text-to-speech (TTS) system focused on Air Traffic Control (ATC)-style speech.
+text-to-speech (TTS) system focused on Air Traffic Control (ATC) speech.
 
 Users can:
 
 - Enter a text prompt to synthesize speech
 - Optionally supply a reference audio file for voice cloning
 - Adjust parameters such as exaggeration, pace, and temperature
-- Select gender and speaking style presets (e.g., Standard vs ATC)
 
 The system uses the Chatterbox TTS model by Resemble AI, a state-of-the-art
 zero-shot English TTS model, and is presented via a Gradio web UI.
@@ -33,21 +32,41 @@ these aspects using a flexible TTS framework.
 
 ```text
 mae6291-tts/
+├── components/
+│ ├── init.py
+│ ├── audio_input.py
+│ ├── button.py
+│ ├── radio_button.py
+│ ├── slider.py
+│ └── textbox.py
+├── functions/
+│ ├── audio/
+│ │ ├── init.py
+│ │ └── denoise.py
+│ ├── inputs/
+│ │ ├── init.py
+│ │ └── process.py
+│ ├── tts/
+│ │ ├── init.py
+│ │ ├── generate.py
+│ │ └── model_loader.py
+│ ├── init.py
+│ ├── constants.py
+│ └── history.py
+├── styles/
+│ ├── init.py
+│ └── main.css
+├── templates/
+│ ├── init.py
+│ └── history_entry.html
+├── utils/
+│ ├── init.py
+│ └── templates.py
+├── .gitattributes
+├── .gitignore
 ├── app.py
 ├── README.md
-├── requirements.txt
-├── .gitignore
-├── components/
-│   ├── __init__.py
-│   ├── audio_input.py
-│   ├── button.py
-│   ├── radio_button.py
-│   ├── slider.py
-│   └── textbox.py
-└── functions/
-    ├── __init__.py
-    ├── process_inputs.py
-    └── tts.py
+└── requirements.txt
 ```
 ---
 
