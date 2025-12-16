@@ -1,4 +1,4 @@
-# mae6291-tts: Text-to-Speech Demo
+# Text-to-Speech Demo
 
 This project is a final project for GWU MAE 6291 and demonstrates a customizable
 text-to-speech (TTS) system focused on Air Traffic Control (ATC) speech.
